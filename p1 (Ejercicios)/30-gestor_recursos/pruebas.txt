@@ -1,0 +1,26 @@
+Para usar esta versión tolerante a fallos, sigue estos pasos:
+
+LA IP CAMBIA, hace falta ejecutar esto -> ifconfig | grep "inet " | grep -v 127.0.0.1
+y mirar el campo inet, esa es la IP que se tiene que usar en eduroam.
+
+1. Inicia el nodo del gestor:
+    iex --name gestor@10.20.35.169 --cookie secret
+
+2. En otra terminal, inicia un nodo cliente:
+    iex --name cliente@10.20.35.169 --cookie secret
+
+3. En el nodo del gestor, carga y inicia el Gestor:
+    iex(gestor@10.20.35.169)1> c("gestor_recursos3.ex")
+    iex(gestor@10.20.35.169)2> Gestor.start([:a, :b, :c, :d])
+
+4. En el nodo cliente, conéctate al nodo del gestor y usa el Gestor:
+    iex(cliente@10.20.35.169)1> Node.connect(:"gestor@10.20.35.169")
+    iex(cliente@10.20.35.169)2> c("gestor_recursos3.ex")
+    iex(cliente@10.20.35.169)3> {:ok, recurso} = Gestor.alloc()
+    iex(cliente@10.20.35.169)4> Gestor.avail()
+
+5. Para probar la tolerancia a fallos, puedes simular la caída de un proceso cliente o de un nodo completo:
+
+- Para simular la caída de un proceso cliente, puedes usar "Process.exit(self(), :kill)"
+  en el nodo cliente después de reservar un recurso.
+- Para simular la caída de un nodo completo, simplemente cierra la terminal del nodo cliente.
