@@ -6,9 +6,3 @@ Arquitectura Software.
 Por cada ejercicio encontramos un directorio que contiene su
 enunciado. Los directorios siguen el mismo orden en que deben
 realizarse los ejercicios.
-
-## Miembros del equipo
-
-- Guillén
-- Adrián
-- Brais
