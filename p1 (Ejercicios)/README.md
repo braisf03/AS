@@ -9,6 +9,6 @@ realizarse los ejercicios.
 
 ## Miembros del equipo
 
-- Porto González, Guillén : guillen-porto : guillen.porto.gonzalez
-- Rego Criado, Adrián : Rego523 : adrian.rego
-- Sánchez Ferreiro, Brais : braisf03 : brais.sferreiro 
+- Guillén
+- Adrián
+- Brais
