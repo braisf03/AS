@@ -34,15 +34,6 @@ aspectos:
 
 KAHOOT CLONE
 
-
-## Autores
-
-  - Antón, López Núñez, anton.lopez.nunez, antonlnz
-  - Simón, Noya Dominguez, simon.noyad, SimonNoyaDominguez
-  - Guillén, Porto González, guillen.porto.gonzalez, guillen-porto
-  - Adrián, Rego Criado, adrian.rego, Rego523
-  - Brais, Sánchez Ferreiro, brais.sferreiro, braisf03
-  - Samuel, Pérez Fente, samuel.perez.fente, samuelperezfente
   
 ## Descripción de la aplicación
 
